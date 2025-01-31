@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(187, 151, 190);
+}
+
+header {
+    background-color: #703967;
+    color: rgb(248, 240, 230);
+    padding: 15px 0;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+aside {
+    float: left;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.menu a:hover{
+    background-color: rgb(248, 240, 230);
+    border-radius: 8px;
+    padding: 2px 2px;
+}
+
+#menu{
+    text-decoration: none;
+    color: #703967;;
+    text-shadow: rgb(239, 204, 240) 3px 1px 7px;
+}
+
+#contacto{
+    float: right;
+    margin-right: 30px;
+    margin-top: -20px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.carousel {
+    float: right;
+    width: 68%;
+    overflow: hidden;
+    margin-top: -480px;
+    margin-right: 30px;
+    border-radius: 15px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }}
+
+h2{
+    color: #4f2848;
+    text-shadow: rgb(239, 204, 240) 3px 1px 7px;
+}
